@@ -1,0 +1,32 @@
+/* Header.css */
+
+/* Default styles for the border */
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -1px; /* Adjust this value for the desired border thickness */
+    left: 0;
+    width: 0;
+    height: 1px; /* Adjust this value for the desired border thickness */
+    background-color: white;
+    transition: width 0.3s ease; /* Adjust the transition duration as needed */
+}
+
+/* Hover styles for the border animation */
+.nav-link:hover::before {
+    width: 100%;
+}
+.test{
+    background-color: blue;
+    color : blue;
+}
+
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scroll {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
